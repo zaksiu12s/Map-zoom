@@ -1,0 +1,28 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.map {
+  position: relative;
+  overflow: hidden;
+  max-width: 1000px;
+  background-size: 400%;
+  background-image: url(./image.png);
+  cursor: zoom-in;
+}
+
+.map.active {
+  cursor: zoom-out;
+}
+
+.map img {
+  display: block;
+  width: 100%;
+  transition: opacity 0.5s;
+}
+
+.map.active img {
+  opacity: 0;
+}
